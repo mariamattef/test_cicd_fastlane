@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "422450741599",
+    "project_id": "test-cicd-fastlane",
+    "storage_bucket": "test-cicd-fastlane.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:422450741599:android:3d98aa0912977d66a2b6ea",
+        "android_client_info": {
+          "package_name": "com.example.test_cicd"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDM_Or251igeKgEG0ZgXKEjnGg7xBjshng"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

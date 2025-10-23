@@ -42,7 +42,7 @@ jobs:
         with:
           appId: ${{ secrets.APP_ID }}
           serviceCredentialsFileContent: ${{ secrets.GOOGLE_SERVICE_CREIDINTIAL }}
-          groups: testers
+          groups: "mariamattef656@gmail.com,mariamatte2024@gmail.com"
           file: build/app/outputs/flutter-apk/app-release.apk
           releaseNotes: "Automated release from GitHub Actions"
 

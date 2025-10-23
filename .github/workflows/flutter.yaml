@@ -9,7 +9,7 @@ on:
     branches:
       - main
 jobs:
-  Distribute Release APK to Firebase App Distribution with github actions:
+  distribute_to_firebase_app_distribution_with_github_actions:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4

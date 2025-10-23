@@ -1,0 +1,26 @@
+require 'dotenv'
+Dotenv.load
+
+
+
+
+default_platform(:android)
+
+platform :android do
+  desc "Distribute App To App Distribution"
+  lane :fastlane_app_distribution do
+    sh "flutter clean" 
+    sh "flutter pub get"
+    sh "flutter build apk --release"
+      firebase_app_distribution(
+    app: ENV["APP_ID"],
+    firebase_cli_token: ENV["FIREBASE_CLI_TOKEN"],
+    android_artifact_type: "APK",
+    android_artifact_path: "../build/app/outputs/apk/release/app-release.apk",
+    upload_timeout: 600,
+    testers: "mariamattef656@gmail.com",
+    release_notes:"First Release"
+  )
+  end
+
+end
